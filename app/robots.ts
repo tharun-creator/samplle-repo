@@ -1,13 +1,13 @@
 import type { MetadataRoute } from "next";
 
-const baseUrl = "https://launch-to-space.vercel.app";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://launch-to-space.vercel.app";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/api/", "/_next/static/chunks/"],
+      disallow: ["/api/"],
     },
     sitemap: `${baseUrl}/sitemap.xml`,
     host: baseUrl,

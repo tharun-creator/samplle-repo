@@ -145,7 +145,7 @@ const documents: Record<string, LegalDocument> = {
       </ul>
       <h2>3 &nbsp; Your payload</h2>
       <p>You are responsible for the payload you supply. By sending it, you confirm that it is accurately described, that it is safe to fly, and that it does not breach any law or any third party's rights.</p>
-      <p>Payloads must meet the published requirements, currently a baseline of 2-5 kg within the standard carrier. The following cannot fly: explosives, pyrotechnics, flammable liquids, pressurised vessels, radioactive material, toxic or corrosive substances, live animals, damaged or non-compliant battery packs, and anything liable to shed debris or separate in flight.</p>
+      <p>Payloads must meet the published requirements, currently a baseline of up to 5 kg within the standard carrier. The following cannot fly: explosives, pyrotechnics, flammable liquids, pressurised vessels, radioactive material, toxic or corrosive substances, live animals, damaged or non-compliant battery packs, and anything liable to shed debris or separate in flight.</p>
       <p>Pharmaceutical, biological and other regulated materials may be flown only where the necessary separate clearances are in place; obtaining them is your responsibility unless we agree otherwise in writing.</p>
       <p>We inspect every payload on arrival and again at integration, and may refuse an item at either point on safety, regulatory or recovery grounds. Where we refuse, we will explain what would make it flyable.</p>
       <h2>4 &nbsp; Permissions, weather and abort</h2>
@@ -215,7 +215,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     openGraph: {
       type: "article",
       url: `/legal/${slug}`,
-      siteName: "Launch To Space",
+      siteName: "ToSpace Launch To Space",
       title: `${document.title} | Launch To Space`,
       description: document.description,
       locale: "en_IN",

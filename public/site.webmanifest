@@ -1,7 +1,7 @@
 {
-  "name": "Launch To Space",
+  "name": "ToSpace Launch To Space",
   "short_name": "Launch To Space",
-  "description": "High-altitude balloon missions to the stratosphere.",
+  "description": "ToSpace high-altitude balloon missions to the stratosphere for payloads, research, education and product marketing.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000000",

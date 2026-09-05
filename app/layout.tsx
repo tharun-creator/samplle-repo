@@ -1,15 +1,17 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://launch-to-space.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://launch-to-space.vercel.app"),
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "Launch To Space | High-Altitude Balloon Missions from India | ToSpace",
+    default: "ToSpace | Launch To Space High-Altitude Balloon Missions in India",
     template: "%s | Launch To Space",
   },
   description:
-    "Launch To Space by ToSpace carries payloads to 30-35 km for research, technology demonstrations, education, commercial missions, product marketing and stratospheric content.",
+    "ToSpace's Launch To Space platform carries payloads to 30-35 km for research, technology demonstrations, education, commercial missions and stratospheric product marketing.",
   keywords: [
     "high altitude balloon India",
     "stratosphere mission",
@@ -26,7 +28,7 @@ export const metadata: Metadata = {
     "Karur aerospace",
   ],
   applicationName: "Launch To Space",
-  authors: [{ name: "ToSpace Private Limited", url: "https://launch-to-space.vercel.app" }],
+  authors: [{ name: "ToSpace Private Limited", url: siteUrl }],
   creator: "ToSpace Private Limited",
   publisher: "ToSpace Private Limited",
   category: "Aerospace services",
@@ -47,8 +49,8 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "/",
-    siteName: "Launch To Space",
-    title: "Launch To Space | High-Altitude Balloon Missions from India",
+    siteName: "ToSpace Launch To Space",
+    title: "ToSpace | Launch To Space High-Altitude Balloon Missions in India",
     description:
       "Carry payloads, experiments and products to 30-35 km with ToSpace's high-altitude balloon platform in India.",
     locale: "en_IN",
@@ -63,7 +65,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Launch To Space | High-Altitude Balloon Missions from India",
+    title: "ToSpace | Launch To Space High-Altitude Balloon Missions in India",
     description: "Carry payloads, experiments and brand content to 30-35 km with ToSpace in India.",
     images: ["/opengraph-image"],
   },
@@ -81,6 +83,10 @@ export const metadata: Metadata = {
     "geo.position": "10.9601;78.0766",
     ICBM: "10.9601, 78.0766",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#000000",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {

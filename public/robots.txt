@@ -1,7 +1,0 @@
-User-agent: *
-Allow: /
-Disallow: /api/
-Disallow: /_next/static/chunks/
-
-Sitemap: https://launch-to-space.vercel.app/sitemap.xml
-Host: https://launch-to-space.vercel.app
