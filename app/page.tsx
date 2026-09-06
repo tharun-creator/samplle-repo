@@ -564,6 +564,18 @@ export default function Home() {
         showTimezoneWhenEventDetailsHidden: true,
         layout: "month_view",
       });
+
+      const fallbackEl = calMount.querySelector<HTMLElement>(".cal-booking__fallback");
+      if (fallbackEl) {
+        const hideFallback = () => { fallbackEl.style.display = "none"; };
+        const mo = new MutationObserver(() => {
+          if (calMount.querySelector("iframe")) {
+            hideFallback();
+            mo.disconnect();
+          }
+        });
+        mo.observe(calMount, { childList: true, subtree: true });
+      }
     }
 
     /* horizon footer reveal */
@@ -744,6 +756,7 @@ export default function Home() {
           <div className="alt__head rv">
             <p className="eyebrow">Altitude profile</p>
             <h2>How far up <span className="nowrap">35 km</span> really is</h2>
+            <p className="alt__head-note">Past the weather, past commercial air traffic, into the edge of space.</p>
           </div>
 
           <div className="alt__inner">
@@ -918,7 +931,7 @@ export default function Home() {
         <div className="wrap" style={{position: 'relative'}}>
           <p className="eyebrow eyebrow--center rv">Our vision</p>
           <p className="vision__quote rv"><span>Near Space, open to anyone</span><span>with an idea worth taking higher.</span></p>
-          <p className="lede rv" style={{transitionDelay: '.1s'}}>To make Near Space accessible not only for science and technology, but also<br />for brands, products, creators, and people with ideas worth taking higher.</p>
+          <p className="lede rv" style={{transitionDelay: '.1s'}}>To make Near Space accessible not only for science and technology, but also for brands, products, creators, and people with ideas worth taking higher.</p>
         </div>
       </section>
 
@@ -1005,7 +1018,8 @@ export default function Home() {
             <h2 style={{marginBottom: '26px'}}>A ToSpace platform</h2>
             <p><strong>Launch To Space</strong> is the High-Altitude Balloon platform built by ToSpace to make Near Space something you can actually reach, without waiting a decade or paying for a rocket.</p>
             <p>A high-altitude balloon can carry a well-built payload to 30–35 km, hold it there while cameras capture the journey and instruments collect data, and bring it back the same day. From that altitude, you can see Earth's curvature, the darkness of space above the atmosphere, and how your hardware performs in an environment unlike anything on the ground.</p>
-            <p>We handle the full flight: balloon, carrier, tracking, recovery and mission operations. <strong>You bring the idea. We'll take it beyond Earth.</strong></p>
+            <p>We handle the full flight: balloon, carrier, tracking, recovery and mission operations.</p>
+            <p className="about__highlight">You bring the idea. We'll take it beyond Earth.</p>
           </div>
         </div>
       </section>
@@ -1048,10 +1062,10 @@ export default function Home() {
             </div>
 
             <div className="booking__panel rv" style={{transitionDelay: '.08s'}}>
-              <div className="cal-booking" id="cal-booking" data-cal-origin="https://cal.com" data-cal-link="tospace/30min" aria-label="Cal.com meeting booking">
+              <div className="cal-booking" id="cal-booking" data-cal-origin="https://cal.com" data-cal-link="adnaan-founder/talk-with-adnaan" aria-label="Cal.com meeting booking">
                 <div className="cal-booking__fallback">
                   <span>Loading Cal.com availability...</span>
-                  <a href="https://cal.com/tospace/30min" target="_blank" rel="noopener">Open in Cal.com</a>
+                  <a href="https://cal.com/adnaan-founder/talk-with-adnaan" target="_blank" rel="noopener">Open in Cal.com</a>
                 </div>
               </div>
             </div>
@@ -1109,6 +1123,7 @@ export default function Home() {
           </div>
         </div>
         <div className="wrap">
+          <div className="foot-group">
           <div className="foot foot--4col">
             <div>
               <h4>Navigate</h4>
@@ -1138,9 +1153,9 @@ export default function Home() {
             </div>
             <div className="foot__offices">
               <h4>Chennai office</h4>
-              <p>No. 23, 2nd Floor, Palandiamman Koil Street,<br />Adambakkam, Chennai 600088, Tamil Nadu, India</p>
+              <p><svg viewBox="0 0 16 20" width="12" height="15" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="M8 19c4-4.6 6.5-8.2 6.5-11.2A6.5 6.5 0 0 0 1.5 7.8C1.5 10.8 4 14.4 8 19z"/><circle cx="8" cy="7.6" r="2.3"/></svg><span>No. 23, 2nd Floor, Palandiamman Koil Street,<br />Adambakkam, Chennai 600088, Tamil Nadu, India</span></p>
               <h4>Karur office</h4>
-              <p>M114, Mullai Street, North Gandhigramam,<br />Karur 639004, Tamil Nadu, India</p>
+              <p><svg viewBox="0 0 16 20" width="12" height="15" fill="none" stroke="currentColor" strokeWidth="1.4" aria-hidden="true"><path d="M8 19c4-4.6 6.5-8.2 6.5-11.2A6.5 6.5 0 0 0 1.5 7.8C1.5 10.8 4 14.4 8 19z"/><circle cx="8" cy="7.6" r="2.3"/></svg><span>M114, Mullai Street, North Gandhigramam,<br />Karur 639004, Tamil Nadu, India</span></p>
             </div>
           </div>
 
@@ -1156,6 +1171,7 @@ export default function Home() {
               <a href="/legal/legal-notice">Legal Notice</a>
               <a href="/legal/terms-and-conditions">Terms &amp; Conditions</a>
             </nav>
+          </div>
           </div>
         </div>
       </footer>
