@@ -588,7 +588,7 @@ h3{font-size:16px;letter-spacing:.03em;font-weight:400}
 .about strong{color:#fff;font-weight:400}
 .about p.about__highlight{
   font-family:var(--f-body);color:#fff;font-size:15px;line-height:1.85;text-transform:none;
-  font-weight:600;letter-spacing:.005em;margin-top:20px;
+  font-weight:400;letter-spacing:.005em;margin-top:20px;
 }
 
 /* ============ FAQ ============ */
