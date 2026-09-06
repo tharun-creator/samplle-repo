@@ -612,9 +612,10 @@ details p{margin:0 0 26px;color:var(--muted);font-size:14.5px;max-width:74ch;lin
   content:"";position:absolute;left:50%;top:0;width:130vw;height:520px;transform:translateX(-50%);pointer-events:none;
   background:radial-gradient(48% 42% at 50% 0%, rgba(90,169,255,.16), rgba(20,55,95,.08) 38%, transparent 72%);
 }
-.booking__grid{position:relative;display:grid;grid-template-columns:1fr;gap:34px;align-items:center}
-@media(min-width:960px){.booking__grid{grid-template-columns:minmax(260px,.4fr) minmax(920px,1fr);gap:56px}}
-.booking__copy{padding-top:8px}
+.booking__grid{position:relative;display:grid;grid-template-columns:1fr;gap:34px}
+.booking__copy{padding-top:8px;max-width:640px;margin:0 auto;text-align:center}
+.booking__copy .booking__meta{justify-items:center}
+@media(min-width:640px){.booking__copy{text-align:left;margin:0}.booking__copy .booking__meta{justify-items:start}}
 .booking__copy .lede{margin-top:22px}
 .booking__meta{margin-top:34px;display:grid;gap:14px}
 .booking__meta span{
