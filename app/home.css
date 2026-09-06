@@ -413,23 +413,24 @@ h3{font-size:16px;letter-spacing:.03em;font-weight:400}
 }
 
 /* ============ MISSION INDEX ============ */
-.grid{display:grid;gap:0;grid-template-columns:1fr;border-top:1px solid var(--line)}
-@media(min-width:640px){.grid{grid-template-columns:1fr 1fr;gap:0 34px;border-top:0}}
+.grid{display:grid;gap:20px;grid-template-columns:1fr}
+@media(min-width:640px){.grid{grid-template-columns:1fr 1fr;gap:22px}}
 @media(min-width:1080px){.grid--4{grid-template-columns:repeat(4,1fr)}.grid--3{grid-template-columns:repeat(3,1fr)}}
 .card{
-  position:relative;display:grid;grid-template-columns:34px minmax(0,1fr);align-items:start;column-gap:18px;
-  padding:26px 0 28px;border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;overflow:visible;
-  transition:border-color .35s,color .35s;
+  position:relative;display:block;
+  padding:32px 28px 30px;border:1px solid var(--line);border-radius:16px;
+  background:linear-gradient(165deg,rgba(255,255,255,.025),rgba(255,255,255,0) 60%);
+  transition:border-color .35s,background .35s,transform .35s,box-shadow .35s;
+  overflow:hidden;
 }
-@media(min-width:640px){.card{border-top:1px solid var(--line)}}
-.card::after{
-  content:"";position:absolute;left:52px;right:0;bottom:-1px;height:1px;opacity:0;pointer-events:none;
-  background:linear-gradient(90deg,rgba(90,169,255,.7),transparent 72%);transition:opacity .35s;
+.card:hover{
+  border-color:rgba(90,169,255,.4);
+  background:linear-gradient(165deg,rgba(90,169,255,.1),rgba(90,169,255,.02) 55%,transparent);
+  box-shadow:0 26px 60px -34px rgba(90,169,255,.5);
+  transform:translateY(-3px);
 }
-.card:hover{border-color:rgba(90,169,255,.28);box-shadow:none;transform:none}
-.card:hover::after{opacity:1}
-.card svg{grid-row:1/span 2;width:22px;height:22px;color:#fff;opacity:.78;margin:2px 0 0;stroke-width:1.15}
-.card h3{margin:0 0 9px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:400}
+.card svg{display:block;width:26px;height:26px;color:#fff;opacity:.85;margin:0 0 22px;stroke-width:1.15}
+.card h3{margin:0 0 10px;font-size:13px;letter-spacing:.1em;text-transform:uppercase;font-weight:400}
 .card p{margin:0;color:var(--muted);font-size:13.4px;line-height:1.68}
 
 /* ============ FULL-BLEED / GLOW BANDS ============ */
@@ -808,8 +809,8 @@ footer>.wrap{position:relative;z-index:3;max-width:var(--maxw);margin:clamp(-56p
 }
 @media(max-width:640px){:root{--pad:20px}.band{padding:80px 0}.band--tight{padding:64px 0}.vision{padding:110px 0}.vision .wrap{transform:none}.vision__quote{font-size:clamp(16px,5vw,30px)}.vision__quote span{white-space:normal;max-width:100%}}
 @media(max-width:640px){
-  .grid{margin-top:34px}
-  .card{grid-template-columns:30px minmax(0,1fr);column-gap:16px;padding:23px 0 24px}
-  .card svg{width:20px;height:20px;margin-top:1px}
+  .grid{margin-top:34px;gap:16px}
+  .card{padding:26px 22px 24px;border-radius:14px}
+  .card svg{width:22px;height:22px;margin-bottom:18px}
   .card h3{font-size:12.5px;line-height:1.4}
 }
