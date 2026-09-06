@@ -271,6 +271,7 @@ h3{font-size:16px;letter-spacing:.03em;font-weight:400}
       linear-gradient(90deg,#000 0%,rgba(0,0,0,.86) 38%,rgba(0,0,0,.34) 100%),
       linear-gradient(180deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.16) 36%,#000 100%);
   }
+  .reel__hud{display:none}
 }
 @media(max-width:640px){
   .hero{padding:88px 0 36px}
@@ -279,7 +280,6 @@ h3{font-size:16px;letter-spacing:.03em;font-weight:400}
   .btn-row{display:grid;grid-template-columns:1fr;gap:12px}
   .btn-row .btn{width:100%;justify-content:space-between}
   .chain{font-size:9px;letter-spacing:.16em}
-  .reel__hud{display:none}
 }
 
 /* ============ STATS ============ */
