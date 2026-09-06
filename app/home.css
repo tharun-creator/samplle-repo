@@ -736,7 +736,7 @@ option{background:#0B0D10}
 .footer-reveal-shell.in .footer-reveal__horizon{opacity:var(--footer-horizon-opacity);transform:translate(-50%,var(--footer-horizon-y))}
 
 /* ============ FOOTER ============ */
-footer{position:relative;isolation:isolate;border-top:1px solid var(--line);padding:0 0 96px;background:transparent}
+footer{position:relative;isolation:isolate;border-top:1px solid var(--line);padding:0 0 40px;background:transparent}
 footer>.wrap{position:relative;z-index:3;max-width:var(--maxw);margin:clamp(-56px,-5vh,-32px) auto 0;padding:clamp(40px,6vh,64px) var(--pad) 0}
 
 .foot-group{width:100%}
