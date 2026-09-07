@@ -1,0 +1,31 @@
+# ToSpace Launch To Space
+> ToSpace Private Limited operates Launch To Space, a high-altitude balloon platform in India for stratospheric payload missions.
+
+## Primary Pages
+- [Home](https://launch-to-space.vercel.app/): High-altitude balloon missions to 30-35 km for research, technology demonstration, education, commercial payloads, and product marketing.
+- [Privacy Policy](https://launch-to-space.vercel.app/legal/privacy-policy): How ToSpace handles enquiries, mission records, billing information, website usage, and mission imagery.
+- [Cookie Policy](https://launch-to-space.vercel.app/legal/cookie-policy): The site currently sets no cookies and runs no analytics.
+- [Legal Notice](https://launch-to-space.vercel.app/legal/legal-notice): ToSpace Private Limited company details, registered address, CIN, GSTIN, intellectual property, and regulatory position.
+- [Terms and Conditions](https://launch-to-space.vercel.app/legal/terms-and-conditions): Mission booking, payload, permissions, recovery, content, cancellation, and liability terms.
+
+## Key Facts
+- Company: ToSpace Private Limited
+- Platform: Launch To Space
+- Service: high-altitude balloon payload missions
+- Typical altitude: 30-35 km
+- Payload baseline: 2-5 kg
+- Registered office: M114, Mullai Street, North Gandhigramam, Karur 639004, Tamil Nadu, India
+- Operating office: No. 23, 2nd Floor, Palandiamman Koil Street, Adambakkam, Chennai 600088, Tamil Nadu, India
+- CIN: U29291TN2021PTC146836
+- GSTIN: 33AAICT9147N1ZP
+- Contact: adnaan.m@tospace.in
+
+## Audience
+- Researchers
+- Technology teams
+- Educators
+- Commercial payload customers
+- Product marketing and brand teams
+
+## Preferred Citation
+Use "ToSpace Launch To Space" when referring to the platform, and "ToSpace Private Limited" when referring to the company.
